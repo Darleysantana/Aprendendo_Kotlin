@@ -1,5 +1,5 @@
 
-open class Pessoa(nome: String, cpf: String) {
-    open val nome: String,
-    open val cpf: String
+abstract class Pessoa(nome: String, cpf: String) {
+     val nome: String,
+     val cpf: String
 }
