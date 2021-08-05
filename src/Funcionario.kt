@@ -5,7 +5,7 @@ abstract class Funcionario(
         cpf: String,
         val salario: BigDecimal
 ) : Pessoa(nome, cpf) {
-    abstract fun calculoIncremento() : {
+    abstract fun calculoAuxilio() : {
 
     }
 }
