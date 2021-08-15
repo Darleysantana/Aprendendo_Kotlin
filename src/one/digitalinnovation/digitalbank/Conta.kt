@@ -3,15 +3,12 @@ package one.digitalinnovation.digitalbank.one.digitalinnovation.digitalbank
 import java.math.BigDecimal
 
 
-class Conta {
-    val agencia: String,
+abstract class Conta(
+    open val agencia: String,
     val numerodaconta: String,
-    val saldo: BigDecimal
-} {
-    fun deposito(valor:BigDecimal){
+    val sold: BigDecimal = TODO()
+)
+    fun deposit(valor:BigDecimal){
 
     }
-    fun saque(valor:BigDecimal){
-
-    }
-}
+    fun saque(valor:BigDecimal) {}
